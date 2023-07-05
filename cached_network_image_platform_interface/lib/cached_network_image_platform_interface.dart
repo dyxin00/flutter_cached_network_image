@@ -1,3 +1,4 @@
+/// Platform interface for CachedNetworkImage
 library cached_network_image_platform_interface;
 
 import 'dart:async';
@@ -31,9 +32,9 @@ class ImageLoader {
     int? maxHeight,
     int? maxWidth,
     Map<String, String>? headers,
-    Function()? errorListener,
+    ValueChanged<Object>? errorListener,
     ImageRenderMethodForWeb imageRenderMethodForWeb,
-    Function() evictImage,
+    VoidCallback evictImage,
   ) {
     throw UnimplementedError();
   }
@@ -49,9 +50,9 @@ class ImageLoader {
     int? maxHeight,
     int? maxWidth,
     Map<String, String>? headers,
-    Function()? errorListener,
+    ValueChanged<Object>? errorListener,
     ImageRenderMethodForWeb imageRenderMethodForWeb,
-    Function() evictImage,
+    VoidCallback evictImage,
   ) {
     throw UnimplementedError();
   }
